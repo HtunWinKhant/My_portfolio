@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { SocialIcon } from 'react-social-icons';
 
 // Custom hook for scroll animations
 const useScrollAnimation = () => {
@@ -498,7 +499,7 @@ export default function Home() {
                     <div className="flex-1">
                       <div className="flex items-center mb-2">
                         <span className="bg-highlight/10 text-highlight px-3 py-1 rounded-full text-xs font-medium mr-3">
-                          CURRENT
+                          PREVIOUS
                         </span>
                         <span className="text-muted text-sm">
                           Nov 2023 - Jan 2025
@@ -1669,13 +1670,20 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-border">
-        <div className="max-w-6xl mx-auto text-center">
-          {/* <p className="text-muted">
-            © 2025 Portfolio. Built with Next.js and Tailwind CSS.
-          </p> */}
-        </div>
-      </footer>
+        <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-border">
+          {/* ...existing footer content... */}
+          <div className="flex justify-center gap-4 mt-4">
+            <SocialIcon url="https://wa.me/142995984" network="whatsapp" />
+            <SocialIcon url="mailto:htunwinkhant56@gmail.com" network="email" />
+            
+          </div>
+          <div className="max-w-6xl mx-auto text-center">
+            {/* <p className="text-muted">
+              © 2025 Portfolio. Built with Next.js and Tailwind CSS.
+            </p> */}
+          </div>
+        </footer>
+
     </div>
   );
 }
