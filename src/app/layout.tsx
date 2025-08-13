@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: "Portfolio",
   description: "My professional portfolio website",
   icons: {
-    icon: "/favicon/apple-touch-icon.png",
-    apple: "/favicon/apple-touch-icon.png",
+    icon: "/favicon/favicon.png",
+    apple: "/favicon/favicon.png",
   },
 };
 
